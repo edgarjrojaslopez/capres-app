@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-bar {
+    @apply z-10 flex h-20 items-center justify-between bg-blue-500 p-[0.75rem];
+  }
+  .nav-link {
+    @apply pl-4 text-lg font-medium text-gray-200 hover:text-white focus:text-white active:text-white;
+  }
+  .bars {
+    @apply block  cursor-pointer text-[2.0rem] text-gray-50 md:hidden;
+  }
+  .nav-menu {
+    @apply -mr-[24px] hidden items-center md:flex;
+  }
+}
